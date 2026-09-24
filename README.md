@@ -1,4 +1,4 @@
-# Kunal.dev: portfolio
+# Kunal.dev: DevOps & Cloud portfolio
 
 A futuristic, dark-first personal site in plain HTML, CSS and JavaScript. No framework, no build step.
 
