@@ -22,8 +22,8 @@ python3 -m http.server 8080   # then open http://localhost:8080
 ```
 
 ## Edit content
-Search `index.html` for `EDIT:`. The experience, projects, skills and contact
-links are **sample content**; replace them with your own before sharing.
+All content lives in `index.html` and mirrors the résumé in
+`assets/Kunal_Phalke_Resume.pdf`. When you update one, update the other.
 
 ## Deploy
 **GitHub Pages:** repo Settings → Pages → Source "Deploy from a branch" → `main` / `(root)`.

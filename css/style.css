@@ -740,3 +740,18 @@ button { font: inherit; color: inherit; }
   .card:hover, .btn:hover, .badges li:hover, .gallery__btn:hover, .socials a:hover { transform: none; }
   .gallery__btn:hover img { transform: none; }
 }
+
+/* ---------- Résumé-specific additions ---------- */
+.timeline__org { margin: -8px 0 12px; font-size: 0.78rem; color: var(--muted); }
+.project__kind {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  color: var(--secondary);
+  border: 1px solid rgba(var(--secondary-rgb), 0.35);
+  background: rgba(var(--secondary-rgb), 0.08);
+}
+.certs { margin-top: 20px; }
+.certs__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 4px 32px; margin: 0; }
+.certs__list strong { color: var(--text); font-weight: 600; }
+.timeline .card .card__title:last-child { margin-bottom: 0; }
