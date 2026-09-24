@@ -30,7 +30,7 @@
   function syncThemeButton() {
     var dark = root.getAttribute('data-theme') !== 'light';
     themeBtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    $('meta[name="theme-color"]').setAttribute('content', dark ? '#05070f' : '#f4f7fc');
+    $('meta[name="theme-color"]').setAttribute('content', dark ? '#07050f' : '#f7f5fc');
   }
   if (themeBtn) {
     syncThemeButton();

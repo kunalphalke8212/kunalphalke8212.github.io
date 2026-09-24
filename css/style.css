@@ -1,22 +1,22 @@
 /* =========================================================
    Kunal.dev: futuristic portfolio
-   Dark-first theme · neon cyan / violet · glassmorphism
+   Dark-first theme · neon violet / pink · glassmorphism
    ========================================================= */
 
 /* ---------- Tokens ---------- */
 :root {
-  --bg: #05070f;
-  --bg-2: #0a1020;
+  --bg: #07050f;
+  --bg-2: #110a22;
   --text: #e6edf7;
   --muted: #9aa7bd;
-  --primary: #00e5ff;
-  --primary-rgb: 0, 229, 255;
-  --secondary: #8b5cf6;
-  --secondary-rgb: 139, 92, 246;
-  --on-primary: #03141a;
+  --primary: #b37cff;
+  --primary-rgb: 179, 124, 255;
+  --secondary: #ec4899;
+  --secondary-rgb: 236, 72, 153;
+  --on-primary: #14061f;
 
-  --glass: rgba(14, 22, 44, 0.55);
-  --glass-strong: rgba(10, 16, 32, 0.8);
+  --glass: rgba(22, 14, 44, 0.55);
+  --glass-strong: rgba(16, 10, 32, 0.8);
   --glass-border: rgba(var(--primary-rgb), 0.18);
   --glass-border-hover: rgba(var(--primary-rgb), 0.55);
   --grid-line: rgba(var(--primary-rgb), 0.06);
@@ -39,14 +39,14 @@
 }
 
 :root[data-theme="light"] {
-  --bg: #f4f7fc;
-  --bg-2: #e9eef8;
+  --bg: #f7f5fc;
+  --bg-2: #eee9f8;
   --text: #0b1222;
   --muted: #4a5670;
-  --primary: #0891b2;           /* darker cyan for contrast on light */
-  --primary-rgb: 8, 145, 178;
-  --secondary: #7c3aed;
-  --secondary-rgb: 124, 58, 237;
+  --primary: #7c3aed;           /* deeper violet for contrast on light */
+  --primary-rgb: 124, 58, 237;
+  --secondary: #c026d3;
+  --secondary-rgb: 192, 38, 211;
   --on-primary: #ffffff;
 
   --glass: rgba(255, 255, 255, 0.6);
@@ -141,7 +141,7 @@ button { font: inherit; color: inherit; }
   z-index: 999;
   display: grid;
   place-items: center;
-  background: #05070f;
+  background: #07050f;
   color: #e6edf7;
   font-family: var(--font-mono);
   cursor: pointer;
@@ -151,17 +151,17 @@ button { font: inherit; color: inherit; }
 .no-boot .boot, .boot.is-done { display: none; }
 .boot__inner { width: min(340px, 100% - 48px); }
 .boot__line { margin: 0 0 14px; font-size: 0.95rem; }
-.boot__line strong { color: #00e5ff; font-weight: 500; }
+.boot__line strong { color: #b37cff; font-weight: 500; }
 .boot__dots::after { content: ""; animation: dots 0.9s steps(4) infinite; }
 .boot__bar {
   height: 3px; border-radius: 3px; overflow: hidden;
-  background: rgba(0, 229, 255, 0.12);
+  background: rgba(179, 124, 255, 0.12);
 }
 .boot__bar span {
   display: block; height: 100%; width: 100%;
   transform-origin: left; transform: scaleX(0);
-  background: linear-gradient(90deg, #00e5ff, #8b5cf6);
-  box-shadow: 0 0 12px #00e5ff;
+  background: linear-gradient(90deg, #b37cff, #ec4899);
+  box-shadow: 0 0 12px #b37cff;
   animation: boot-bar 1s var(--ease) 0.05s forwards;
 }
 .boot__hint { margin: 14px 0 0; font-size: 0.72rem; color: #7d8aa3; letter-spacing: 0.1em; }
@@ -643,11 +643,11 @@ button { font: inherit; color: inherit; }
   width: auto;
   margin-inline: auto;
   border-radius: var(--radius-sm);
-  border: 1px solid rgba(0, 229, 255, 0.45);
-  box-shadow: 0 0 30px rgba(0, 229, 255, 0.25), 0 0 80px rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(179, 124, 255, 0.45);
+  box-shadow: 0 0 30px rgba(179, 124, 255, 0.25), 0 0 80px rgba(236, 72, 153, 0.2);
 }
 .lightbox__caption { margin-top: 12px; text-align: center; font-size: 0.85rem; color: #9aa7bd; }
-.lightbox .icon-btn { position: fixed; font-size: 1.4rem; line-height: 1; background: rgba(10, 16, 32, 0.8); color: #e6edf7; border-color: rgba(0, 229, 255, 0.3); }
+.lightbox .icon-btn { position: fixed; font-size: 1.4rem; line-height: 1; background: rgba(16, 10, 32, 0.8); color: #e6edf7; border-color: rgba(179, 124, 255, 0.3); }
 .lightbox__close { top: 16px; right: 16px; }
 .lightbox__nav { top: 50%; transform: translateY(-50%); }
 .lightbox__nav--prev { left: 16px; }
